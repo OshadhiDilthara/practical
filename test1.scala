@@ -10,12 +10,12 @@ object test1 {
 
     def profit(ticketPrice:Int):Int = revenue(ticketPrice) - cost(ticketPrice);
     
-    // Assumptions : ticket price can not be descreased less than 10 and increased more than 1000 
+    // Assumptions : ticket price can not be decreased less than 10 and increased more than 1000 
     var ticketprice:Int = 10;
     var bestTprice:Int=0;
     var maxProfit:Int =0;
 
-    for(tprice <- 10 to 1000){
+   for(ticketprice<-10 to 1000){
          if(profit(ticketprice)> maxProfit){
             maxProfit= profit(ticketprice);
             bestTprice=ticketprice;
